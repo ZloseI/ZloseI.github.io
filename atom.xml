@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zlosei.github.io/"/>
-  <updated>2020-06-21T04:03:54.119Z</updated>
+  <updated>2020-06-21T04:41:58.038Z</updated>
   <id>https://zlosei.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>建站</title>
+    <link href="https://zlosei.github.io/2020/06/21/jian-zhan/"/>
+    <id>https://zlosei.github.io/2020/06/21/jian-zhan/</id>
+    <published>2020-06-21T04:36:16.000Z</published>
+    <updated>2020-06-21T04:41:58.038Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h1 id=""><a href="#" class="headerlink" title=""></a></h1><pre><code>   建造本站基本都是从白天一路肝到晚上，看着插件一点一点的完善，可惜的是github只支持静态的托管而导致无法进行线上的编辑。</code></pre><hr><h3 id="完善了blog的内容"><a href="#完善了blog的内容" class="headerlink" title="完善了blog的内容"></a>完善了blog的内容</h3><h6 id="增加说说内容，评论"><a href="#增加说说内容，评论" class="headerlink" title="增加说说内容，评论"></a>增加说说内容，评论</h6><p>可增加内容却未加</p><pre><code>     线上聊天     线上互动     视频（没有内存）</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;   建造本站基本都是从白天一路肝到晚上，看着插件一点一点的完善，可惜的是github只支持静态的托管而导致无法进行线上的编辑。&lt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Java变量</title>
