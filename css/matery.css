@@ -271,10 +271,10 @@ mark {
 }
 
 /*如果想去掉banner图的颜色渐变效果，请将以下的css属性注释掉或者删除掉即可*/
-@-webkit-keyframes not {
+@-webkit-keyframes rainbow {
    /* 动态切换背景颜色. */
 }
-@keyframes not {
+@keyframes rainbow {
     /* 动态切换背景颜色. */
 }
 
