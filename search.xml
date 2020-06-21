@@ -4,25 +4,6 @@
   
     
     <entry>
-      <title>新</title>
-      <link href="/2020/06/21/xin-1/"/>
-      <url>/2020/06/21/xin-1/</url>
-      
-        <content type="html"><![CDATA[<p>##Java–基本变量</p><p>一、标识符和关键字</p><p>标识符<br>在java语言中，用来标志类名、对象名、变量名、方法名、类型名、数组名、包名的有效字符序列，称为“标识符”；<br>标识符由字母、数字、下划线、美元符号组成，且第一个字符不能是数字；<br>java语言区分大小写；<br>标志符命名规则：类名首字母大写，变量名和方法名采用驼峰标志法，常量全大写，多个单词之间用“_”隔开，包名全小写；<br>关键字<br>在java语言中，有一些专门的词汇已经被赋予了特殊的含义，不能再使用这些词汇来命名标识符，这些专有词汇，称为“关键字”；<br>java有50个关键字和3个保留字，均不能用来命名标识符；<br>abstract    assert    boolean    break    byte    case    catch    char<br>class    const    continue    default    do    double    else    enum<br>extends    final    finally    float    for    goto    if    implements<br>import    instanceof    int    interface    long    native    new    package<br>private    protected    public    return    short    static    strictfp    super<br>switch    synchronized    this    throw    throws    transient    try    void<br>volatile    while<br>true、false、null不是关键字，是保留字，但是仍不能用来命名标识符，保留字是java预留的关键字，在以后的升级版本中可能会作为关键字；</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> T </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>github</title>
       <link href="/2020/06/20/github/"/>
       <url>/2020/06/20/github/</url>
@@ -40,7 +21,7 @@
       <link href="/2020/06/20/xin-guan-xin-xi/"/>
       <url>/2020/06/20/xin-guan-xin-xi/</url>
       
-        <content type="html"><![CDATA[<h1 id="截至6月19日24时新型冠状病毒肺炎疫情最新情况"><a href="#截至6月19日24时新型冠状病毒肺炎疫情最新情况" class="headerlink" title="截至6月19日24时新型冠状病毒肺炎疫情最新情况"></a>截至6月19日24时新型冠状病毒肺炎疫情最新情况</h1><p>​      6月19日0—24时，31个省（自治区、直辖市）和新疆生产建设兵团报告新增确诊病例27例，其中境外输入病例4例（广东3例，上海1例），本土病例23例（北京22例，河北1例）；无新增死亡病例；新增疑似病例4例，均为本土病例（均在北京）。</p><p>　　当日新增治愈出院病例12例，解除医学观察的密切接触者232人，重症病例与前一日持平。 　　境外输入现有确诊病例83例（无重症病例），无现有疑似病例。累计确诊病例1868例，累计治愈出院病例1785例，无死亡病例。</p><p> 　　截至6月19日24时，据31个省（自治区、直辖市）和新疆生产建设兵团报告，现有确诊病例308例（其中重症病例13例），累计治愈出院病例78410例，累计死亡病例4634例，累计报告确诊病例83352例，现有疑似病例11例。累计追踪到密切接触者756223人，尚在医学观察的密切接触者6023人。 </p><p>　　31个省（自治区、直辖市）和新疆生产建设兵团报告新增无症状感染者7例（境外输入5例）；当日无转为确诊病例；当日解除医学观察9例（境外输入8例）；尚在医学观察无症状感染者108例（境外输入57例）。 </p><p>　　累计收到港澳台地区通报确诊病例1618例。其中，香港特别行政区1127例（出院1074例，死亡4例），澳门特别行政区45例（出院45例），台湾地区446例（出院434例，死亡7例）。    （注：媒体引用时，请标注“信息来自国家卫生健康委员会官方网站”。）</p><p>（注：媒体引用时，请标注“信息来自国家卫生健康委员会官方网站”。）</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<hr><h1 id="截至6月19日24时新型冠状病毒肺炎疫情最新情况"><a href="#截至6月19日24时新型冠状病毒肺炎疫情最新情况" class="headerlink" title="截至6月19日24时新型冠状病毒肺炎疫情最新情况"></a>截至6月19日24时新型冠状病毒肺炎疫情最新情况</h1><p>​      6月19日0—24时，31个省（自治区、直辖市）和新疆生产建设兵团报告新增确诊病例27例，其中境外输入病例4例（广东3例，上海1例），本土病例23例（北京22例，河北1例）；无新增死亡病例；新增疑似病例4例，均为本土病例（均在北京）。</p><p>　　当日新增治愈出院病例12例，解除医学观察的密切接触者232人，重症病例与前一日持平。 　　境外输入现有确诊病例83例（无重症病例），无现有疑似病例。累计确诊病例1868例，累计治愈出院病例1785例，无死亡病例。</p><p> 　　截至6月19日24时，据31个省（自治区、直辖市）和新疆生产建设兵团报告，现有确诊病例308例（其中重症病例13例），累计治愈出院病例78410例，累计死亡病例4634例，累计报告确诊病例83352例，现有疑似病例11例。累计追踪到密切接触者756223人，尚在医学观察的密切接触者6023人。 </p><p>　　31个省（自治区、直辖市）和新疆生产建设兵团报告新增无症状感染者7例（境外输入5例）；当日无转为确诊病例；当日解除医学观察9例（境外输入8例）；尚在医学观察无症状感染者108例（境外输入57例）。 </p><p>　　累计收到港澳台地区通报确诊病例1618例。其中，香港特别行政区1127例（出院1074例，死亡4例），澳门特别行政区45例（出院45例），台湾地区446例（出院434例，死亡7例）。    （注：媒体引用时，请标注“信息来自国家卫生健康委员会官方网站”。）</p><p>（注：媒体引用时，请标注“信息来自国家卫生健康委员会官方网站”。）</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       
