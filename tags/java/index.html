@@ -276,22 +276,27 @@
                 
             </div>
 
-            <div class="description center-align">
+            <<div class="description center-align">
                 
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['真正的勇士，敢于直面惨淡的人生，敢于正视淋漓的鲜血这是怎样的哀痛者和幸福者？','The real warrior, dare to face the bleak life, dare to face the dripping blood. What kind of mourner and happiness are they?'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
+                    <span id="subtitle"></span>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                   <script>
+                       var typed = new Typed("#subtitle", {
+                           strings: ['真正的勇士，敢于直面惨淡的人生，敢于正视淋漓的鲜血这是怎样的哀痛者和幸福者？',
+                                     '友谊是两颗心的真诚相待，而不是一颗心对另一颗心的敲打。',
+                                     '哀其不幸，怒其不争。',
+                                     '我好像是一只牛，吃的是草，挤出的是奶。',
+                                     '从来没有真正的绝境, 只有心灵的迷途。',
+                                     '当我沉默的时候，我觉得充实；我将开口，同时感到空虚。'],
+                            startDelay: 300,
+                            typeSpeed: 100,
+                            loop: true,   
+                            backSpeed: 50,
+                            showCursor: true
+                         });
+                     </script>
+                 
+           </div>
         </div>
     </div>
 </div>
@@ -556,34 +561,6 @@ $(function () {
     
 
     
-        <script src="//code.tidio.co/.js"></script>
-        <script>
-            $(document).ready(function () {
-                setInterval(change_Tidio, 50);
-                function change_Tidio() {
-                    var tidio=$("#tidio-chat iframe");
-                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
-                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";
-                        document.getElementById("tidio-chat-iframe").style.right="-15px";
-                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
-                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
-                    }
-                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
-                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;
-                        document.getElementById("tidio-chat-iframe").style.right="-15px";
-                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
-                    }
-                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
-                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
-                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
-                    }
-                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
-                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
-                    }
-                }
-            });
-        </script>
-    
 
     
     <script>
@@ -600,7 +577,7 @@ $(function () {
         })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
             "//widget.daovoice.io/widget/6984b559.js", "daovoice")
         daovoice('init', {
-            app_id: ""
+            app_id: "4bf3c70b"
         });
         daovoice('update');
     </script>
