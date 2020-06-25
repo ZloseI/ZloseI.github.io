@@ -267,8 +267,11 @@ mark {
 
 /* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. */
 .bg-color {
-    background-image: linear-gradient(to right, #bfb130 0%, #fa1010 100%);
+    background-image: linear-gradient(to right, #fc7d06fd 0%, #f81eff 100%); //修改成自己喜欢的颜色值
+    opacity: 0;  //透明效果 值范围 0~1，看情况自己修改
 }
+
+
 
 /*如果想去掉banner图的颜色渐变效果，请将以下的css属性注释掉或者删除掉即可*/
 @-webkit-keyframes rainbow {
