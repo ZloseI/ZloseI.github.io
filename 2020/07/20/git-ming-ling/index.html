@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 随云~姿を消す">
+    <meta name="keywords" content="Git命令, 随云~姿を消す">
     <meta name="description" content="愿你成为自己喜欢的模样，不抱怨，不将就，有自由，有光芒♡">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 随云~姿を消す</title>
+    <title>Git命令 | 随云~姿を消す</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -539,12 +539,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Git命令</h1>
                 </div>
             </div>
         </div>
@@ -673,28 +673,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-20
+                    2020-07-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-20
+                    2020-06-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    125
+                    6.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    24 分
                 </div>
                 
 
@@ -709,15 +709,523 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <p><strong>一、 Git 命令初识</strong></p>
+<p>在正式介绍Git命令之前，先介绍一下Git 的基本命令和操作，对Git命令有一个总体的认识</p>
+<p>示例：从Git 版本库的初始化，通常有两种方式：</p>
+<p>1）git clone：这是一种较为简单的初始化方式，当你已经有一个远程的Git版本库，只需要在本地克隆一份</p>
+<p>例如：git  clone  git://github.com/someone/some_project.git  some_project</p>
+<p>上面的命令就是将’git://github.com/someone/some_project.git’这个URL地址的远程版本库，完全克隆到本地some_project目录下</p>
+<p>2）git</p>
+<p>init 和 git remote：这种方式稍微复杂一些，当你本地创建了一个工作目录，你可以进入这个目录，使用’git</p>
+<p>init’命令进行初始化；Git以后就会对该目录下的文件进行版本控制，这时候如果你需要将它放到远程服务器上，可以在远程服务器上创建一个目录，并把</p>
+<p>可访问的URL记录下来，此时你就可以利用’git remote add’命令来增加一个远程服务器端，</p>
+<p>例如：git  remote  add  origin  git://github.com/someone/another_project.git</p>
+<p>上面的命令就会增加URL地址为’git: //github.com/someone/another_project.git’，名称为origin的远程服务器，以后提交代码的时候只需要使用 origin别名即可</p>
+<p><strong>二、 Git 常用命令</strong></p>
+<p>1) 远程仓库相关命令</p>
+<p>检出仓库：     $ git clone git://github.com/jquery/jquery.git</p>
+<p>查看远程仓库：$ git remote -v</p>
+<p>添加远程仓库：$ git remote add [name] [url]</p>
+<p>删除远程仓库：$ git remote rm [name]</p>
+<p>修改远程仓库：$ git remote set-url –push [name] [newUrl]</p>
+<p>拉取远程仓库：$ git pull [remoteName] [localBranchName]</p>
+<p>推送远程仓库：$ git push [remoteName] [localBranchName]</p>
+<p>*如果想把本地的某个分支test提交到远程仓库，并作为远程仓库的master分支，或者作为另外一个名叫test的分支，如下：</p>
+<p>$git push origin test:master     // 提交本地test分支作为远程的master分支</p>
+<p>$git push origin test:test        // 提交本地test分支作为远程的test分支</p>
+<p><strong>2）分支(branch)操作相关命令</strong></p>
+<p>查看本地分支：$ git branch</p>
+<p>查看远程分支：$ git branch -r</p>
+<p>创建本地分支：$ git branch [name] —-注意新分支创建后不会自动切换为当前分支</p>
+<p>切换分支：$ git checkout [name]</p>
+<p>创建新分支并立即切换到新分支：$ git checkout -b [name]</p>
+<p>删除分支：$ git branch -d [name] —- -d选项只能删除已经参与了合并的分支，对于未有合并的分支是无法删除的。如果想强制删除一个分支，可以使用-D选项</p>
+<p>合并分支：$ git merge [name] —-将名称为[name]的分支与当前分支合并</p>
+<p>创建远程分支(本地分支push到远程)：$ git push origin [name]</p>
+<p>删除远程分支：$ git push origin :heads/[name] 或 $ gitpush origin :[name]</p>
+<p>*创建空的分支：(执行命令之前记得先提交你当前分支的修改，否则会被强制删干净没得后悔)</p>
+<p>$git symbolic-ref HEAD refs/heads/[name]</p>
+<p>$rm .git/index</p>
+<p>$git clean -fdx</p>
+<p><strong>3）版本(tag)操作相关命令</strong></p>
+<p>查看版本：$ git tag</p>
+<p>创建版本：$ git tag [name]</p>
+<p>删除版本：$ git tag -d [name]</p>
+<p>查看远程版本：$ git tag -r</p>
+<p>创建远程版本(本地版本push到远程)：$ git push origin [name]</p>
+<p>删除远程版本：$ git push origin :refs/tags/[name]</p>
+<p>合并远程仓库的tag到本地：$ git pull origin –tags</p>
+<p>上传本地tag到远程仓库：$ git push origin –tags</p>
+<p>创建带注释的tag：$ git tag -a [name] -m ‘yourMessage’</p>
+<p><strong>4) 子模块(submodule)相关操作命令</strong></p>
+<p>添加子模块：$ git submodule add [url] [path]</p>
+<p>如：$git submodule add git://github.com/soberh/ui-libs.git src/main/webapp/ui-libs</p>
+<p>初始化子模块：$ git submodule init  —-只在首次检出仓库时运行一次就行</p>
+<p>更新子模块：$ git submodule update —-每次更新或切换分支后都需要运行一下</p>
+<p>删除子模块：（分4步走哦）</p>
+<p>1) $ git rm –cached [path]</p>
+<p>2) 编辑“.gitmodules”文件，将子模块的相关配置节点删除掉</p>
+<p>3) 编辑“ .git/config”文件，将子模块的相关配置节点删除掉</p>
+<p>4) 手动删除子模块残留的目录</p>
+<p><strong>5）忽略一些文件、文件夹不提交</strong></p>
+<p>在仓库根目录下创建名称为“.gitignore”的文件，写入不需要的文件夹名或文件，每个元素占一行即可，如</p>
+<p>target</p>
+<p>bin</p>
+<p>*.db</p>
+<p><strong>三、 Git 命令详解</strong></p>
+<p>现在我们有了本地和远程的版本库，让我们来试着用用Git的基本命令：</p>
+<p><strong>git pull：</strong>从其他的版本库（既可以是远程的也可以是本地的）将代码更新到本地，例如：’git pull origin master’就是将origin这个版本库的代码更新到本地的master主枝，该功能类似于SVN的<strong>update</strong></p>
+<p><strong>git add：</strong>是将当前更改或者新增的文件加入到Git的索引中，加入到Git的索引中就表示记入了版本历史中，这也是提交之前所需要执行的一步，例如’git add app/model/user.rb’就会增加app/model/user.rb文件到Git的索引中，该功能类似于SVN的<strong>add</strong></p>
+<p><strong>git rm：</strong>从当前的工作空间中和索引中删除文件，例如’git rm app/model/user.rb’，该功能类似于SVN的<strong>rm、del</strong></p>
+<p><strong>git commit：</strong>提交当前工作空间的修改内容，类似于SVN的commit命令，例如’git commit -m story #3, add user model’，提交的时候必须用-m来输入一条提交信息，该功能类似于SVN的<strong>commit</strong></p>
+<p><strong>git push：</strong>将本地commit的代码更新到远程版本库中，例如’git push origin’就会将本地的代码更新到名为orgin的远程版本库中</p>
+<p><strong>git log：</strong>查看历史日志，该功能类似于SVN的<strong>log</strong></p>
+<p><strong>git revert：</strong>还原一个版本的修改，必须提供一个具体的Git版本号，例如’git revert bbaf6fb5060b4875b18ff9ff637ce118256d6f20’，Git的版本号都是生成的一个哈希值</p>
+<p>上面的命令几乎都是每个版本控制工具所公有的，下面就开始尝试一下Git独有的一些命令：</p>
+<p><strong>git branch：</strong>对分支的增、删、查等操作，例如’git branch new_branch’会从当前的工作版本创建一个叫做new_branch的新分支，’git branch -D new_branch’就会强制删除叫做new_branch的分支，’git branch’就会列出本地所有的分支</p>
+<p><strong>git checkout：</strong>Git的checkout有两个作用，其一是在不同的branch之间进行切换，例如’git checkout new_branch’就会切换到new_branch的分支上去；另一个功能是还原代码的作用，例如’git checkout app/model/user.rb’就会将user.rb文件从上一个已提交的版本中更新回来，未提交的内容全部会回滚</p>
+<p><strong>git rebase：</strong>用下面两幅图解释会比较清楚一些，rebase命令执行后，实际上是将分支点从C移到了G，这样分支也就具有了从C到G的功能</p>
+<p><strong>git reset：</strong>将当前的工作目录完全回滚到指定的版本号，假设如下图，我们有A-G五次提交的版本，其中C的版本号是 bbaf6fb5060b4875b18ff9ff637ce118256d6f20，我们执行了’git reset bbaf6fb5060b4875b18ff9ff637ce118256d6f20’那么结果就只剩下了A-C三个提交的版本</p>
+<p><strong>git stash：</strong>将当前未提交的工作存入Git工作栈中，时机成熟的时候再应用回来，这里暂时提一下这个命令的用法，后面在技巧篇会重点讲解</p>
+<p><strong>git config：</strong>利用这个命令可以新增、更改Git的各种设置，例如’git config branch.master.remote origin’就将master的远程版本库设置为别名叫做origin版本库，后面在技巧篇会利用这个命令个性化设置你的Git，为你打造独一无二的 Git</p>
+<p><strong>git tag：</strong>可以将某个具体的版本打上一个标签，这样你就不需要记忆复杂的版本号哈希值了，例如你可以使用’git tag revert_version bbaf6fb5060b4875b18ff9ff637ce118256d6f20’来标记这个被你还原的版本，那么以后你想查看该版本时，就可以使用 revert_version标签名，而不是哈希值了</p>
+<p>Git 之所以能够提供方便的本地分支等特性，是与它的文件存储机制有关的。Git存储版本控制信息时使用它自己定义的一套文件系统存储机制，在代码根目录下有一个.git文件夹，会有如下这样的目录结构：</p>
+<p>有</p>
+<p>几个比较重要的文件和目录需要解释一下：HEAD文件存放根节点的信息，其实目录结构就表示一个树型结构，Git采用这种树形结构来存储版本信息，那么</p>
+<p>HEAD就表示根；refs目录存储了你在当前版本控制目录下的各种不同引用（引用指的是你本地和远程所用到的各个树分支的信息），它有heads、</p>
+<p>remotes、stash、tags四个子目录，分别存储对不同的根、远程版本库、Git栈和标签的四种引用，你可以通过命令’git</p>
+<p>show-ref’更清晰地查看引用信息；logs目录根据不同的引用存储了日志信息。因此，Git只需要代码根目录下的这一个.git目录就可以记录完</p>
+<p>整的版本控制信息，而不是像SVN那样根目录和子目录下都有.svn目录。那么下面就来看一下Git与SVN的区别吧</p>
+<p><strong>四、 Git 与SVN 比较</strong></p>
+<p><strong>SVN</strong>（Subversion）是当前使用最多的版本控制工具。与它相比较，<strong>Git</strong>最大的优势在于两点：易于本地增加分支和分布式的特性。</p>
+<p>下面两幅图可以形象的展示Git与SVN的不同之处：</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https:////upload-images.jianshu.io/upload_images/2548203-bcce4dbcff979ba5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/900/format/webp" alt="img"></p>
+<p>-———–</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https:////upload-images.jianshu.io/upload_images/2548203-b304a9636fee8d0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/900/format/webp" alt="img"></p>
+<p>1）本地增加分支</p>
+<p>图中Git本地和服务器端结构都很灵活，所有版本都存储在一个目录中，你只需要进行分支的切换即可达到在某个分支工作的效果</p>
+<p>而SVN则完全不同，如果你需要在本地试验一些自己的代码，只能本地维护多个不同的拷贝，每个拷贝对应一个SVN服务器地址</p>
+<p>举一个实际的例子：</p>
+<p>使用SVN作为版本控制工具，当正在试图增强一个模块，工作做到一半，由于会改变原模块的行为导致代码服务器上许多测试的失败，所以并没有提交代码。</p>
+<p>这</p>
+<p>时候假如现在有一个很紧急的Bug需要处理，</p>
+<p>必须在两个小时内完成。我只好将本地的所有修改diff，并输出成为一个patch文件，然后回滚有关当前任务的所有代码，再开始修改Bug的任务，等到</p>
+<p>修改好后，在将patch应用回来。前前后后要完成多个繁琐的步骤，这还不计中间代码发生冲突所要进行的工作量。</p>
+<p>可是如果使用Git， 我们只需要开一个分支或者转回到主分支上，就可以随时开始Bug修改的任务，完成之后，只要切换到原来的分支就可以优雅的继续以前的任务。只要你愿意，每一个新的任务都可以开一个分支，完成后，再将它合并到主分支上，轻松而优雅。</p>
+<p>2）分布式提交</p>
+<p>Git 可以本地提交代码，所以在上面的图中，Git有利于将一个大任务分解，进行本地的多次提交</p>
+<p>而SVN只能在本地进行大量的一次性更改，导致将来合并到主干上造成巨大的风险</p>
+<p>3）日志查看</p>
+<p>Git 的代码日志是在本地的，可以随时查看</p>
+<p>SVN的日志在服务器上的，每次查看日志需要先从服务器上下载下来</p>
+<p>例如：代码服务器在美国，当每次查看几年前所做的工作时，日志下载可能需要十分钟，这不能不说是一个痛苦。但是如果迁移到Git上，利用Git日志在本地的特性，查看某个具体任务的所有代码历史，每次只需要几秒钟，大大方便了工作，提高了效率。</p>
+<p>当然分布式并不是说用了Git就不需要一个代码中心服务器，如果你工作在一个团队里，还是需要一个服务器来保存所有的代码的。</p>
+<p><strong>一、 Git 常用命令速查</strong></p>
+<p>git branch 查看本地所有分支</p>
+<p>git status 查看当前状态</p>
+<p>git commit 提交</p>
+<p>git branch -a 查看所有的分支</p>
+<p>git branch -r 查看远程所有分支</p>
+<p>git commit -am “init” 提交并且加注释</p>
+<p>git remote add origin <a href="mailto:git@192.168.1.119">git@192.168.1.119</a>:ndshow</p>
+<p>git push origin master 将文件给推到服务器上</p>
+<p>git remote show origin 显示远程库origin里的资源</p>
+<p>git push origin master:develop</p>
+<p>git push origin master:hb-dev 将本地库与服务器上的库进行关联</p>
+<p>git checkout –track origin/dev 切换到远程dev分支</p>
+<p>git branch -D master develop 删除本地库develop</p>
+<p>git checkout -b dev 建立一个新的本地分支dev</p>
+<p>git merge origin/dev 将分支dev与当前分支进行合并</p>
+<p>git checkout dev 切换到本地dev分支</p>
+<p>git remote show 查看远程库</p>
+<p>git add .</p>
+<p>git rm 文件名(包括路径) 从git中删除指定文件</p>
+<p>git clone git://github.com/schacon/grit.git 从服务器上将代码给拉下来</p>
+<p>git config –list 看所有用户</p>
+<p>git ls-files 看已经被提交的</p>
+<p>git rm [file name] 删除一个文件</p>
+<p>git commit -a 提交当前repos的所有的改变</p>
+<p>git add [file name] 添加一个文件到git index</p>
+<p>git commit -v 当你用－v参数的时候可以看commit的差异</p>
+<p>git commit -m “This is the message describing the commit” 添加commit信息</p>
+<p>git commit -a -a是代表add，把所有的change加到git index里然后再commit</p>
+<p>git commit -a -v 一般提交命令</p>
+<p>git log 看你commit的日志</p>
+<p>git diff 查看尚未暂存的更新</p>
+<p>git rm a.a 移除文件(从暂存区和工作区中删除)</p>
+<p>git rm –cached a.a 移除文件(只从暂存区中删除)</p>
+<p>git commit -m “remove” 移除文件(从Git中删除)</p>
+<p>git rm -f a.a 强行移除修改后文件(从暂存区和工作区中删除)</p>
+<p>git diff –cached 或 $ git diff –staged 查看尚未提交的更新</p>
+<p>git stash push 将文件给push到一个临时空间中</p>
+<p>git stash pop 将文件从临时空间pop下来</p>
+<p>-——————————————————–</p>
+<p>git remote add origin <a href="mailto:git@github.com">git@github.com</a>:username/Hello-World.git</p>
+<p>git push origin master 将本地项目给提交到服务器中</p>
+<p>-———————————————————-</p>
+<p>git pull 本地与服务器端同步</p>
+<p>-—————————————————————-</p>
+<p>git push (远程仓库名) (分支名) 将本地分支推送到服务器上去。</p>
+<p>git push origin serverfix:awesomebranch</p>
+<p>-—————————————————————–</p>
+<p>git fetch 相当于是从远程获取最新版本到本地，不会自动merge</p>
+<p>git commit -a -m “log_message” (-a是提交所有改动，-m是加入log信息) 本地修改同步至服务器端 ：</p>
+<p>git branch branch_0.1 master 从主分支master创建branch_0.1分支</p>
+<p>git branch -m branch_0.1 branch_1.0 将branch_0.1重命名为branch_1.0</p>
+<p>git checkout branch_1.0/master 切换到branch_1.0/master分支</p>
+<p>du -hs</p>
+<p>git branch 删除远程branch</p>
+<p>git push origin<strong>:</strong>branch_remote_name</p>
+<p>git branch -r -d branch_remote_name</p>
+<p>-———————————————————-</p>
+<p>初始化版本库，并提交到远程服务器端</p>
+<p>mkdir WebApp</p>
+<p>cd WebApp</p>
+<p>git init本地初始化</p>
+<p>touch README</p>
+<p>git add README添加文件</p>
+<p>git commit -m ‘first commit’</p>
+<p>git remote add origin <a href="mailto:git@github.com">git@github.com</a>:daixu/WebApp.git增加一个远程服务器端</p>
+<p>上面的命令会增加URL地址为‘git@github.com:daixu/WebApp.git’，名称为origin的远程服务器库，以后提交代码的时候只需要使用 origin别名即可</p>
+<p><strong>二、 Git 命令速查表</strong></p>
+<p>1、常用的Git命令</p>
+<p><strong>命令</strong></p>
+<p><strong>简要说明</strong></p>
+<p>git add</p>
+<p>添加至暂存区</p>
+<p>git add–interactive</p>
+<p>交互式添加</p>
+<p>git apply</p>
+<p>应用补丁</p>
+<p>git am</p>
+<p>应用邮件格式补丁</p>
+<p>git annotate</p>
+<p>同义词，等同于 git blame</p>
+<p>git archive</p>
+<p>文件归档打包</p>
+<p>git bisect</p>
+<p>二分查找</p>
+<p>git blame</p>
+<p>文件逐行追溯</p>
+<p>git branch</p>
+<p>分支管理</p>
+<p>git cat-file</p>
+<p>版本库对象研究工具</p>
+<p>git checkout</p>
+<p>检出到工作区、切换或创建分支</p>
+<p>git cherry-pick</p>
+<p>提交拣选</p>
+<p>git citool</p>
+<p>图形化提交，相当于 git gui 命令</p>
+<p>git clean</p>
+<p>清除工作区未跟踪文件</p>
+<p>git clone</p>
+<p>克隆版本库</p>
+<p>git commit</p>
+<p>提交</p>
+<p>git config</p>
+<p>查询和修改配置</p>
+<p>git describe</p>
+<p>通过里程碑直观地显示提交ID</p>
+<p>git diff</p>
+<p>差异比较</p>
+<p>git difftool</p>
+<p>调用图形化差异比较工具</p>
+<p>git fetch</p>
+<p>获取远程版本库的提交</p>
+<p>git format-patch</p>
+<p>创建邮件格式的补丁文件。参见 git am 命令</p>
+<p>git grep</p>
+<p>文件内容搜索定位工具</p>
+<p>git gui</p>
+<p>基于Tcl/Tk的图形化工具，侧重提交等操作</p>
+<p>git help</p>
+<p>帮助</p>
+<p>git init</p>
+<p>版本库初始化</p>
+<p>git init-db*</p>
+<p>同义词，等同于 git init</p>
+<p>git log</p>
+<p>显示提交日志</p>
+<p>git merge</p>
+<p>分支合并</p>
+<p>git mergetool</p>
+<p>图形化冲突解决</p>
+<p>git mv</p>
+<p>重命名</p>
+<p>git pull</p>
+<p>拉回远程版本库的提交</p>
+<p>git push</p>
+<p>推送至远程版本库</p>
+<p>git rebase</p>
+<p>分支变基</p>
+<p>git rebase–interactive</p>
+<p>交互式分支变基</p>
+<p>git reflog</p>
+<p>分支等引用变更记录管理</p>
+<p>git remote</p>
+<p>远程版本库管理</p>
+<p>git repo-config*</p>
+<p>同义词，等同于 git config</p>
+<p>git reset</p>
+<p>重置改变分支“游标”指向</p>
+<p>git rev-parse</p>
+<p>将各种引用表示法转换为哈希值等</p>
+<p>git revert</p>
+<p>反转提交</p>
+<p>git rm</p>
+<p>删除文件</p>
+<p>git show</p>
+<p>显示各种类型的对象</p>
+<p>git stage*</p>
+<p>同义词，等同于 git add</p>
+<p>git stash</p>
+<p>保存和恢复进度</p>
+<p>git status</p>
+<p>显示工作区文件状态</p>
+<p>git tag</p>
+<p>里程碑管理</p>
+<p>2、对象库操作相关命令</p>
+<p><strong>命令</strong></p>
+<p><strong>简要说明</strong></p>
+<p>git commit-tree</p>
+<p>从树对象创建提交</p>
+<p>git hash-object</p>
+<p>从标准输入或文件计算哈希值或创建对象</p>
+<p>git ls-files</p>
+<p>显示工作区和暂存区文件</p>
+<p>git ls-tree</p>
+<p>显示树对象包含的文件</p>
+<p>git mktag</p>
+<p>读取标准输入创建一个里程碑对象</p>
+<p>git mktree</p>
+<p>读取标准输入创建一个树对象</p>
+<p>git read-tree</p>
+<p>读取树对象到暂存区</p>
+<p>git update-index</p>
+<p>工作区内容注册到暂存区及暂存区管理</p>
+<p>git unpack-file</p>
+<p>创建临时文件包含指定 blob 的内容</p>
+<p>git write-tree</p>
+<p>从暂存区创建一个树对象</p>
+<p>3、引用操作相关命令</p>
+<p><strong>命令</strong></p>
+<p><strong>简要说明</strong></p>
+<p>git check-ref-format</p>
+<p>检查引用名称是否符合规范</p>
+<p>git for-each-ref</p>
+<p>引用迭代器，用于shell编程</p>
+<p>git ls-remote</p>
+<p>显示远程版本库的引用</p>
+<p>git name-rev</p>
+<p>将提交ID显示为友好名称</p>
+<p>git peek-remote*</p>
+<p>过时命令，请使用 git ls-remote</p>
+<p>git rev-list</p>
+<p>显示版本范围</p>
+<p>git show-branch</p>
+<p>显示分支列表及拓扑关系</p>
+<p>git show-ref</p>
+<p>显示本地引用</p>
+<p>git symbolic-ref</p>
+<p>显示或者设置符号引用</p>
+<p>git update-ref</p>
+<p>更新引用的指向</p>
+<p>git verify-tag</p>
+<p>校验 GPG 签名的Tag</p>
+<p>4、版本库管理相关命令</p>
+<p><strong>命令</strong></p>
+<p><strong>简要说明</strong></p>
+<p>git count-objects</p>
+<p>显示松散对象的数量和磁盘占用</p>
+<p>git filter-branch</p>
+<p>版本库重构</p>
+<p>git fsck</p>
+<p>对象库完整性检查</p>
+<p>git fsck-objects*</p>
+<p>同义词，等同于 git fsck</p>
+<p>git gc</p>
+<p>版本库存储优化</p>
+<p>git index-pack</p>
+<p>从打包文件创建对应的索引文件</p>
+<p>git lost-found*</p>
+<p>过时，请使用 git fsck –lost-found 命令</p>
+<p>git pack-objects</p>
+<p>从标准输入读入对象ID，打包到文件</p>
+<p>git pack-redundant</p>
+<p>查找多余的 pack 文件</p>
+<p>git pack-refs</p>
+<p>将引用打包到 .git/packed-refs 文件中</p>
+<p>git prune</p>
+<p>从对象库删除过期对象</p>
+<p>git prune-packed</p>
+<p>将已经打包的松散对象删除</p>
+<p>git relink</p>
+<p>为本地版本库中相同的对象建立硬连接</p>
+<p>git repack</p>
+<p>将版本库未打包的松散对象打包</p>
+<p>git show-index</p>
+<p>读取包的索引文件，显示打包文件中的内容</p>
+<p>git unpack-objects</p>
+<p>从打包文件释放文件</p>
+<p>git verify-pack</p>
+<p>校验对象库打包文件</p>
+<p>5、数据传输相关命令</p>
+<p><strong>命令</strong></p>
+<p><strong>简要说明</strong></p>
+<p>git fetch-pack</p>
+<p>执行 git fetch 或 git pull 命令时在本地执行此命令，用于从其他版本库获取缺失的对象</p>
+<p>git receive-pack</p>
+<p>执行 git push 命令时在远程执行的命令，用于接受推送的数据</p>
+<p>git send-pack</p>
+<p>执行 git push 命令时在本地执行的命令，用于向其他版本库推送数据</p>
+<p>git upload-archive</p>
+<p>执行 git archive –remote 命令基于远程版本库创建归档时，远程版本库执行此命令传送归档</p>
+<p>git upload-pack</p>
+<p>执行 git fetch 或 git pull 命令时在远程执行此命令，将对象打包、上传</p>
+<p>6、邮件相关命令</p>
+<p><strong>命令</strong></p>
+<p><strong>简要说明</strong></p>
+<p>git imap-send</p>
+<p>将补丁通过 IMAP 发送</p>
+<p>git mailinfo</p>
+<p>从邮件导出提交说明和补丁</p>
+<p>git mailsplit</p>
+<p>将 mbox 或 Maildir 格式邮箱中邮件逐一提取为文件</p>
+<p>git request-pull</p>
+<p>创建包含提交间差异和执行PULL操作地址的信息</p>
+<p>git send-email</p>
+<p>发送邮件</p>
+<p>7、协议相关命令</p>
+<p><strong>命令</strong></p>
+<p><strong>简要说明</strong></p>
+<p>git daemon</p>
+<p>实现Git协议</p>
+<p>git http-backend</p>
+<p>实现HTTP协议的CGI程序，支持智能HTTP协议</p>
+<p>git instaweb</p>
+<p>即时启动浏览器通过 gitweb 浏览当前版本库</p>
+<p>git shell</p>
+<p>受限制的shell，提供仅执行Git命令的SSH访问</p>
+<p>git update-server-info</p>
+<p>更新哑协议需要的辅助文件</p>
+<p>git http-fetch</p>
+<p>通过HTTP协议获取版本库</p>
+<p>git http-push</p>
+<p>通过HTTP/DAV协议推送</p>
+<p>git remote-ext</p>
+<p>由Git命令调用，通过外部命令提供扩展协议支持</p>
+<p>git remote-fd</p>
+<p>由Git命令调用，使用文件描述符作为协议接口</p>
+<p>git remote-ftp</p>
+<p>由Git命令调用，提供对FTP协议的支持</p>
+<p>git remote-ftps</p>
+<p>由Git命令调用，提供对FTPS协议的支持</p>
+<p>git remote-http</p>
+<p>由Git命令调用，提供对HTTP协议的支持</p>
+<p>git remote-https</p>
+<p>由Git命令调用，提供对HTTPS协议的支持</p>
+<p>git remote-testgit</p>
+<p>协议扩展示例脚本</p>
+<p>8、版本库转换和交互相关命令</p>
+<p><strong>命令</strong></p>
+<p><strong>简要说明</strong></p>
+<p>git archimport</p>
+<p>导入Arch版本库到Git</p>
+<p>git bundle</p>
+<p>提交打包和解包，以便在不同版本库间传递</p>
+<p>git cvsexportcommit</p>
+<p>将Git的一个提交作为一个CVS检出</p>
+<p>git cvsimport</p>
+<p>导入CVS版本库到Git。或者使用 cvs2git</p>
+<p>git cvsserver</p>
+<p>Git的CVS协议模拟器，可供CVS命令访问Git版本库</p>
+<p>git fast-export</p>
+<p>将提交导出为 git-fast-import 格式</p>
+<p>git fast-import</p>
+<p>其他版本库迁移至Git的通用工具</p>
+<p>git svn</p>
+<p>Git 作为前端操作 Subversion</p>
+<p>9、合并相关的辅助命令</p>
+<p><strong>命令</strong></p>
+<p><strong>简要说明</strong></p>
+<p>git merge-base</p>
+<p>供其他脚本调用，找到两个或多个提交最近的共同祖先</p>
+<p>git merge-file</p>
+<p>针对文件的两个不同版本执行三向文件合并</p>
+<p>git merge-index</p>
+<p>对index中的冲突文件调用指定的冲突解决工具</p>
+<p>git merge-octopus</p>
+<p>合并两个以上分支。参见 git merge 的octopus合并策略</p>
+<p>git merge-one-file</p>
+<p>由 git merge-index 调用的标准辅助程序</p>
+<p>git merge-ours</p>
+<p>合并使用本地版本，抛弃他人版本。参见 git merge 的ours合并策略</p>
+<p>git merge-recursive</p>
+<p>针对两个分支的三向合并。参见 git merge 的recursive合并策略</p>
+<p>git merge-resolve</p>
+<p>针对两个分支的三向合并。参见 git merge 的resolve合并策略</p>
+<p>git merge-subtree</p>
+<p>子树合并。参见 git merge 的 subtree 合并策略</p>
+<p>git merge-tree</p>
+<p>显式三向合并结果，不改变暂存区</p>
+<p>git fmt-merge-msg</p>
+<p>供执行合并操作的脚本调用，用于创建一个合并提交说明</p>
+<p>git rerere</p>
+<p>重用所记录的冲突解决方案</p>
+<p>10、 杂项</p>
+<p><strong>命令</strong></p>
+<p><strong>简要说明</strong></p>
+<p>git bisect–helper</p>
+<p>由 git bisect 命令调用，确认二分查找进度</p>
+<p>git check-attr</p>
+<p>显示某个文件是否设置了某个属性</p>
+<p>git checkout-index</p>
+<p>从暂存区拷贝文件至工作区</p>
+<p>git cherry</p>
+<p>查找没有合并到上游的提交</p>
+<p>git diff-files</p>
+<p>比较暂存区和工作区，相当于 git diff –raw</p>
+<p>git diff-index</p>
+<p>比较暂存区和版本库，相当于 git diff –cached –raw</p>
+<p>git diff-tree</p>
+<p>比较两个树对象，相当于 git diff –raw A B</p>
+<p>git difftool–helper</p>
+<p>由 git difftool 命令调用，默认要使用的差异比较工具</p>
+<p>git get-tar-commit-id</p>
+<p>从 git archive 创建的 tar 包中提取提交ID</p>
+<p>git gui–askpass</p>
+<p>命令 git gui 的获取用户口令输入界面</p>
+<p>git notes</p>
+<p>提交评论管理</p>
+<p>git patch-id</p>
+<p>补丁过滤行号和空白字符后生成补丁唯一ID</p>
+<p>git quiltimport</p>
+<p>将Quilt补丁列表应用到当前分支</p>
+<p>git replace</p>
+<p>提交替换</p>
+<p>git shortlog</p>
+<p>对 git log 的汇总输出，适合于产品发布说明</p>
+<p>git stripspace</p>
+<p>删除空行，供其他脚本调用</p>
+<p>git submodule</p>
+<p>子模组管理</p>
+<p>git tar-tree</p>
+<p>过时命令，请使用 git archive</p>
+<p>git var</p>
+<p>显示 Git 环境变量</p>
+<p>git web–browse</p>
+<p>启动浏览器以查看目录或文件</p>
+<p>git whatchanged</p>
+<p>显示提交历史及每次提交的改动</p>
+<p>git-mergetool–lib</p>
+<p>包含于其他脚本中，提供合并/差异比较工具的选择和执行</p>
+<p>git-parse-remote</p>
+<p>包含于其他脚本中，提供操作远程版本库的函数</p>
+<p>git-sh-setup</p>
+<p>包含于其他脚本中，提供 shell 编程的函数库</p>
+<p>本片内容转自CSDN</p>
+<p><a href="http://blog.csdn.net/ithomer/article/details/7529022" target="_blank" rel="noopener">http://blog.csdn.net/ithomer/article/details/7529022</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -761,7 +1269,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zlosei.github.io/2020/06/20/hello-world/">https://zlosei.github.io/2020/06/20/hello-world/</a>
+                    <a href="https://zlosei.github.io/2020/07/20/git-ming-ling/">https://zlosei.github.io/2020/07/20/git-ming-ling/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1014,24 +1522,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/06/20/github/">
+                <a href="/2020/07/20/ji-suan-ji-kao-shi-da-gang/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/21.jpg" class="responsive-img" alt="github">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/17.jpg" class="responsive-img" alt="计算机考试大纲">
                         
-                        <span class="card-title">github</span>
+                        <span class="card-title">计算机考试大纲</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Github1.GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。2.GitHub 于 2008 年 4 月 10 日正式上线，除了 Git 代码仓库托管及基本的 W
+                            计算机应用基础技能考试大纲考试时长：90分钟   考试总分：100分授课时主要根据全国计算机等级考试一级MS Office考试大纲（2018年版）的要求，系统学习计算机基础知识，根据一级MS Office模拟软件完成实操部分的教学任务：一、
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-20
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
                         </span>
                         <span class="publish-author">
                             
@@ -1048,10 +1556,10 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/20/hello-world/">
+                <a href="/2020/07/20/hello-world/">
                     <div class="card-image">
                         
                         
@@ -1068,7 +1576,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
                             </span>
                         <span class="publish-author">
                             
@@ -1078,7 +1586,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -1283,7 +1790,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.8k</span>&nbsp;字
+                class="white-color">18.3k</span>&nbsp;字
             
             
             
@@ -1505,11 +2012,11 @@ $(function () {
     
     
 
-<script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight+240||document.documentElement.clientHeight+240)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight+240||document.documentElement.clientHeight+240)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>
